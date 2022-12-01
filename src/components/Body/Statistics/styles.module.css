@@ -1,0 +1,36 @@
+.statistics {
+  background-color: hsl(0, 0%, 88%);
+  position: relative;
+  min-height: 33rem;
+}
+
+.statistics h2 {
+  margin-top: 6rem;
+}
+.statistics_desc {
+  text-align: center;
+  color: hsl(0, 1%, 62%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.statistics_cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+.statistics_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 751px) {
+  .statistics_cards {
+    display: flex;
+    flex-direction: column;
+  }
+}

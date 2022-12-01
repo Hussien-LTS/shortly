@@ -1,0 +1,33 @@
+.container {
+  margin-top: 3.5rem;
+}
+
+.container h1 {
+  font-weight: 500;
+}
+
+.container p {
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(0, 0%, 75%);
+}
+.start_Btn {
+  border-radius: 50px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  background: hsl(180, 66%, 49%);
+  padding: 10px 33px 10px 33px;
+  margin-bottom: 7rem;
+  border: solid #f2f2f2 2px;
+  text-decoration: none;
+}
+
+.start_Btn:hover {
+  background: hsl(180, 54%, 69%);
+}
+
+@media only screen and (max-width: 768px) and (min-width: 575px) {
+  .container h1 {
+    font-size: 33px;
+  }
+}

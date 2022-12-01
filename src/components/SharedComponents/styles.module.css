@@ -1,0 +1,65 @@
+.result {
+  display: flex;
+  max-width: 70% !important;
+  margin-top: 1rem;
+
+  background-color: aqua;
+}
+
+.row {
+  padding-top: 1rem;
+}
+
+.copy_Btn {
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  background: hsl(180, 66%, 49%);
+  border: solid hsl(180, 66%, 49%) 2px;
+  text-decoration: none;
+}
+
+.statistics_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2rem 2rem 2rem 1rem;
+}
+
+.statistics_img {
+  position: absolute;
+  background-color: #3c2f55;
+  top: -1.5rem;
+  left: 2.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics_card > h3 {
+  margin-top: 1rem;
+  padding: 28px 0px 0px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #34333b;
+}
+
+.statistics_card > p {
+  color: hsl(257, 7%, 63%);
+  padding: 0px 30px 25px;
+}
+
+@media only screen and (max-width: 751px) {
+  .statistics_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    margin: 1rem auto 1rem auto;
+  }
+}

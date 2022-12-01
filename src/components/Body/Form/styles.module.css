@@ -1,0 +1,192 @@
+.container {
+  background-color: hsl(0, 0%, 88%);
+}
+
+.form {
+  background-image: url("../../../images/bg-shorten-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.input {
+  max-height: 4rem;
+  margin-right: 2rem;
+}
+.errors {
+  font-size: 12px;
+  color: rgb(247, 73, 73);
+  margin-bottom: 0;
+}
+.submit_btn {
+  max-height: 3rem;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  background: hsl(180, 66%, 49%);
+  padding: 7px 33px 7px 33px;
+  border: none;
+  text-decoration: none;
+}
+
+.submit_btn:hover {
+  background: hsl(180, 54%, 69%);
+}
+
+.short_Link_container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1rem 2rem 1rem 2rem;
+  background: #f7f7f7;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.short_Link_container h2 {
+  font-size: 12px;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.shorted_Link {
+  color: hsl(180, 66%, 49%) !important;
+}
+
+.short_Link_container:last-child {
+  margin-bottom: 0;
+}
+
+.copy_btn {
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  background: hsl(180, 66%, 49%);
+  padding: 10px 33px 10px 33px;
+  border: none;
+  text-decoration: none;
+}
+
+.copy_btn:hover {
+  background: hsl(180, 54%, 69%);
+}
+
+@media only screen and (min-width: 991px) {
+  .form {
+    max-width: 82%;
+    margin: 0 auto;
+  }
+  .submit_btn {
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    background: hsl(180, 66%, 49%);
+    padding: 9px 33px 9px 33px;
+    border: none;
+    text-decoration: none;
+  }
+  .input {
+    max-height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .short_Link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .short_Link_container > h2 {
+    padding: 7px 0px 5px 13px;
+  }
+  .link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 550px;
+  }
+  .rightSide > h2 {
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+  }
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+  .copy_btn {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+  }
+
+  .form {
+    background-image: url("../../../images/bg-shorten-mobile.svg");
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .short_Link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .short_Link_container > h2 {
+    margin: 0 auto;
+  }
+  .rightSide > h2 {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+  .copy_btn {
+    min-width: 50%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+}
